@@ -6,9 +6,9 @@ function Footer() {
       <div className="container border-top mt-2">
         <div className="row mt-5">
           <div className="col-3 ">
-            <img src="images/logo.svg" alt="logo" style={{ width: "50%" }} />
+            <img src="images/newLogo.png" alt="logo" style={{ width: "70%" }} />
             <p className="mt-3">
-              © 2010 - 2025, EquiTradeBroking Ltd. All rights reserved.
+              © 2010 - 2025, EquiTrade Broking Ltd. All rights reserved.
             </p>
           </div>
           <div className="col-3 ">
@@ -69,15 +69,15 @@ function Footer() {
 
         <div className="mt-5 text-muted" style={{ fontSize: "13px" }}>
           <p>
-            Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
-            no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha
+            EquiTrade Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
+            no.: INZ000031633 CDSL/NSDL: Depository services through EquiTrade
             Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity
-            Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; SEBI
-            Registration no.: INZ000038238 Registered Address: Zerodha Broking
+            Trading through EquiTrade Commodities Pvt. Ltd. MCX: 46025; SEBI
+            Registration no.: INZ000038238 Registered Address: EquiTrade Broking
             Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public
             School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India.
             For any complaints pertaining to securities broking please write to
-            complaints@zerodha.com, for DP related to dp@zerodha.com. Please
+            complaints@equitrade.com, for DP related to dp@equitrade.com. Please
             ensure you carefully read the Risk Disclosure Document as prescribed
             by SEBI | ICF{" "}
           </p>

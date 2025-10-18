@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
    
       <nav class="navbar navbar-expand-lg border-bottom p-3"  style={{backgroundColor: "#ffff"}}>
         <div class="container-fluid ">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.svg" alt= "logo" style={{width: "25%"}}/>
-          </a>
+          <Link class="navbar-brand" to="/">
+            <img src="images/newLogo.png" alt= "logo" style={{width: "45%"}}/>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -24,29 +25,29 @@ function Navbar() {
             <form class="d-flex " role="search">
                 <ul class="navbar-nav mb-2 mb-lg-0" style={{ paddingRight: "40px" }}>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link class="nav-link active" aria-current="page" to="/signup">
                     Sign Up
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <Link class="nav-link active" to="/about">
                     About
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link class="nav-link active" aria-current="page" to="/products">
                     Product
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <Link class="nav-link active" to="/pricing">
                     Pricing
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <Link class="nav-link active" to="/support">
                     Support
-                </a>
+                </Link>
               </li>
               
                 

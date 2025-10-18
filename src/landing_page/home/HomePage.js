@@ -12,14 +12,14 @@ import Stats from './Stats';
 function Home() {
     return ( 
         <>
-            <Navbar />
+            
             <Hero />
             <Awards />
             <Stats />
             <Pricing />
             <Education />
             <OpenAccount />
-            <Footer />
+            
         </>
      );
 }
