@@ -5,10 +5,15 @@ import HeroSupport from "./Hero";
 function Support() {
   return (
     <>
+    <HeroSupport />
       <CreateTicket />
-      <HeroSupport />
+      
     </>
   );
 }
 
 export default Support;
+
+
+
+

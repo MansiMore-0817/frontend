@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <Navbar/>
-  <Routes>
+  <Routes> 
     <Route path='/' element={<HomePage/>}/>
     <Route path='/signup' element={<SignUp/>}/>
     <Route path='/about' element={<AboutPage/>}/>
@@ -27,7 +27,7 @@ root.render(
     <Route path='*' element={<NotFound/>}/>
   </Routes>
   <Footer/>
-  </BrowserRouter>
+  </BrowserRouter> 
 );
 
 

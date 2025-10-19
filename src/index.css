@@ -60,3 +60,30 @@ footer a:hover {
   justify-content: center; /* center the whole list */
   background-color: #f8f9fa; /* optional bg color */
 }
+
+#supportHero {
+  background-color: rgb(56,126, 209);
+  color: white;
+}
+
+#supportHero a{
+  color: white;
+
+}
+
+
+
+
+#supportWrapper {
+  display: flex; 
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+#supportHero input {
+    padding: 20px 50px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
