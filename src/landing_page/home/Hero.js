@@ -11,7 +11,7 @@ function Hero() {
   return (
     <div className="container p-5" >
       <div className="row text-center">
-        <img src="images/homeHero.png " alt="Hero image" className="mb-5"/>
+        <img src="images/homeHero.png" alt="Hero image" className="mb-5"/>
         <h1 className="mt-5">Invest In Your Future With EquiTrade</h1>
         <p>
           Online platform for trading and investing in stocks, cryptocurrencies,
