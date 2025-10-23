@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-function SignUp() {
+function Login() {
     const [formData, setFormData] = useState({
-        username: '',
         email: '',
-        password: '',
-        confirmPassword: ''
+        password: ''
     });
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState('');
@@ -28,22 +26,8 @@ function SignUp() {
         setMessage('');
         setError('');
 
-        // Validation
-        if (formData.password !== formData.confirmPassword) {
-            setError('Passwords do not match');
-            setLoading(false);
-            return;
-        }
-
-        if (formData.password.length < 6) {
-            setError('Password must be at least 6 characters long');
-            setLoading(false);
-            return;
-        }
-
         try {
-            const response = await axios.post('http://localhost:3002/register', {
-                username: formData.username,
+            const response = await axios.post('http://localhost:3002/login', {
                 email: formData.email,
                 password: formData.password
             });
@@ -53,7 +37,7 @@ function SignUp() {
                 localStorage.setItem('token', response.data.token);
                 localStorage.setItem('user', JSON.stringify(response.data.user));
                 
-                setMessage('Account created successfully! Redirecting to dashboard...');
+                setMessage('Login successful! Redirecting to dashboard...');
                 
                 // Redirect to dashboard after 2 seconds
                 setTimeout(() => {
@@ -61,7 +45,7 @@ function SignUp() {
                 }, 2000);
             }
         } catch (error) {
-            const errorMessage = error.response?.data?.message || 'Registration failed';
+            const errorMessage = error.response?.data?.message || 'Login failed';
             setError(errorMessage);
         } finally {
             setLoading(false);
@@ -83,7 +67,7 @@ function SignUp() {
                 borderRadius: '10px',
                 boxShadow: '0 15px 35px rgba(0, 0, 0, 0.1)',
                 width: '100%',
-                maxWidth: '500px'
+                maxWidth: '400px'
             }}>
                 <div style={{ textAlign: 'center', marginBottom: '30px' }}>
                     <h1 style={{ 
@@ -92,10 +76,10 @@ function SignUp() {
                         fontSize: '28px',
                         fontWeight: '300'
                     }}>
-                        Join EquiTrade
+                        Welcome Back
                     </h1>
                     <p style={{ color: '#666', fontSize: '16px' }}>
-                        Create your account and start trading
+                        Sign in to your EquiTrade account
                     </p>
                 </div>
 
@@ -126,34 +110,6 @@ function SignUp() {
                 )}
 
                 <form onSubmit={handleSubmit}>
-                    <div style={{ marginBottom: '20px' }}>
-                        <label style={{ 
-                            display: 'block', 
-                            marginBottom: '5px', 
-                            color: '#333',
-                            fontSize: '14px',
-                            fontWeight: '500'
-                        }}>
-                            Username
-                        </label>
-                        <input
-                            type="text"
-                            name="username"
-                            value={formData.username}
-                            onChange={handleChange}
-                            required
-                            style={{
-                                width: '100%',
-                                padding: '12px',
-                                border: '1px solid #ddd',
-                                borderRadius: '5px',
-                                fontSize: '16px',
-                                boxSizing: 'border-box'
-                            }}
-                            placeholder="Choose a username"
-                        />
-                    </div>
-
                     <div style={{ marginBottom: '20px' }}>
                         <label style={{ 
                             display: 'block', 
@@ -206,35 +162,7 @@ function SignUp() {
                                 fontSize: '16px',
                                 boxSizing: 'border-box'
                             }}
-                            placeholder="Create a password"
-                        />
-                    </div>
-
-                    <div style={{ marginBottom: '20px' }}>
-                        <label style={{ 
-                            display: 'block', 
-                            marginBottom: '5px', 
-                            color: '#333',
-                            fontSize: '14px',
-                            fontWeight: '500'
-                        }}>
-                            Confirm Password
-                        </label>
-                        <input
-                            type="password"
-                            name="confirmPassword"
-                            value={formData.confirmPassword}
-                            onChange={handleChange}
-                            required
-                            style={{
-                                width: '100%',
-                                padding: '12px',
-                                border: '1px solid #ddd',
-                                borderRadius: '5px',
-                                fontSize: '16px',
-                                boxSizing: 'border-box'
-                            }}
-                            placeholder="Confirm your password"
+                            placeholder="Enter your password"
                         />
                     </div>
 
@@ -260,18 +188,18 @@ function SignUp() {
                             if (!loading) e.target.style.backgroundColor = '#667eea';
                         }}
                     >
-                        {loading ? 'Creating Account...' : 'Create Account'}
+                        {loading ? 'Signing In...' : 'Sign In'}
                     </button>
                 </form>
 
                 <div style={{ textAlign: 'center', marginTop: '20px' }}>
                     <p style={{ color: '#666', fontSize: '14px' }}>
-                        Already have an account?{' '}
+                        Don't have an account?{' '}
                         <a 
-                            href="/dashboard" 
+                            href="/signup" 
                             style={{ color: '#667eea', textDecoration: 'none' }}
                         >
-                            Sign In
+                            Sign Up
                         </a>
                     </p>
                 </div>
@@ -280,4 +208,4 @@ function SignUp() {
     );
 }
 
-export default SignUp;
+export default Login;

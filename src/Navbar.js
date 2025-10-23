@@ -25,6 +25,11 @@ function Navbar() {
             <form class="d-flex " role="search">
                 <ul class="navbar-nav mb-2 mb-lg-0" style={{ paddingRight: "40px" }}>
               <li class="nav-item">
+                <Link class="nav-link active" to="/login">
+                    Login
+                </Link>
+              </li>
+              <li class="nav-item">
                 <Link class="nav-link active" aria-current="page" to="/signup">
                     Sign Up
                 </Link>
