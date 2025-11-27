@@ -12,7 +12,7 @@ function Team() {
       >
         <div className="col-6  p-3 text-center">
           <img
-            src="/images/nithinKamath.jpg"
+            src="/images/mansi_img.jpg"
             alt="ppl"
             style={{ borderRadius: "100%", width: "50%" }}
           />
@@ -20,16 +20,16 @@ function Team() {
           <h6>CEO, Founder</h6>
         </div>
         <div className="col-6  p-3" style={{fontSize: "18px"}}>
-          Nithin bootstrapped and founded Zerodha in 2010 to overcome the
-          hurdles he faced during his decade long stint as a trader. Today,
-          Zerodha has changed the landscape of the Indian broking industry.
+          Mansi bootstrapped and founded Equitrade in 2025 to overcome the
+          hurdles she faced during her decade long stint as a trader. Today,
+          Equitrade has changed the landscape of the Indian broking industry.
           <br />
           <br />
-          He is a member of the SEBI Secondary Market Advisory Committee (SMAC)
+          She is a member of the SEBI Secondary Market Advisory Committee (SMAC)
           and the Market Data Advisory Committee (MDAC).
           <br />
           <br />
-          Playing basketball is his zen.
+          Playing badminton is her zen.
           <br />
           <br />
           <p>
