@@ -23,9 +23,9 @@ function Footer() {
             <br />
             <a href="#">Careers</a>
             <br />
-            <a href="#">Zerodha Cares (CSR)</a>
+            <a href="#">EquiTrade Cares (CSR)</a>
             <br />
-            <a href="#">Zerodha.tech</a>
+            <a href="#">EquiTrade.tech</a>
             <br />
             <a href="#">Open source</a>
           </div>
@@ -37,7 +37,7 @@ function Footer() {
             <br />
             <a href="#">Support Portal</a>
             <br />
-            <a href="#">Z-Connect Blog</a>
+            <a href="#">E-Connect Blog</a>
             <br />
             <a href="#">List Of Charges</a>
             <br />
