@@ -12,11 +12,11 @@ function Team() {
       >
         <div className="col-6  p-3 text-center">
           <img
-            src="/images/mansi_img.jpg"
+            src="/images/mansi_img.jpeg"
             alt="ppl"
             style={{ borderRadius: "100%", width: "50%" }}
           />
-          <h4 className="mt-4">Nithin Kamath</h4>
+          <h4 className="mt-4">Mansi More</h4>
           <h6>CEO, Founder</h6>
         </div>
         <div className="col-6  p-3" style={{fontSize: "18px"}}>
